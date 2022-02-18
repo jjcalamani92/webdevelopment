@@ -1,0 +1,111 @@
+.portfolio{
+    z-index: 0;
+    .box-container{
+        padding-bottom: 3rem;
+        @include grid(3, 1.5rem);
+        .box{
+            height: 40rem;
+            border-radius: .5rem;
+            overflow: hidden;
+            position: relative;
+            box-shadow:$box-shadow;
+            
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            span{
+                position: absolute;
+                top: 1rem; right: 2rem;
+                font-weight: 600;
+                font-size: 5rem;
+                color: $text-color-1;
+            }
+            .content{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 6rem; left: 0;
+                transition-delay: .3s;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition-delay: .1s;
+                h3{
+                    font-size: 2.5rem;
+                    padding-bottom: .5rem;
+                    color:$text-color-1;
+                }
+                p{
+                    font-size: 1.5rem;
+                    color: $text-color-2;
+                    padding: 1rem 0;
+                    text-align: center;
+                    line-height: 1.7;
+                }
+                a{
+                    font-size: 2rem;
+                    color: $orange;
+                    font-weight: 700;
+                    padding-bottom: 2rem;
+                    &:hover{
+                        color: $text-color-1;
+                    }
+                }
+                .btns{
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    .btn-1{
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            &::before{
+                height: 100%;
+                width: 100%;
+                content: '';
+                position: absolute;
+                top:0; left: 0;
+                background: #fff;
+                clip-path: circle(30% at 93% 0);
+                transition: .3s linear;
+                
+            }
+            &:hover::before{
+                clip-path: circle(100%);
+                
+            }
+            &:hover span{
+                font-weight: 700;
+            }
+            &:hover .content{
+                top:0; 
+                opacity: 1;
+                transition-delay: .4s
+            }
+        }
+        
+        @include tablet{
+            @include grid(2,1.5rem);
+            .box{
+                height: 30rem;
+                span {
+                    font-size: 4rem;
+                }
+            }
+        }
+        @include telefono{
+            display: flex;
+            flex-flow: column;
+            .box{
+                margin-bottom: .5rem;
+            }
+        }
+
+    }
+
+}

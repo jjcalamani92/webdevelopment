@@ -1,0 +1,67 @@
+.academys{
+    .box-container{
+        padding-bottom: 2rem;
+        @include grid(5,1.5rem);
+        .box{
+            padding: 2rem;
+            box-shadow: $box-shadow;
+            border-radius: .5rem;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            align-content: center;       
+            &:hover{
+                background: #fff;
+                h3{
+                    color: $text-color-1;
+                }
+            }
+            img{
+                height: 15rem;
+                width: auto;
+            }
+            
+            h3{
+                color: $text-color-1;
+                font-size: 1.7rem;
+                font-weight: normal;
+                text-transform: uppercase;
+                margin: 1.5rem 0;
+            }
+            button{
+                align-content: flex-end;    
+            }
+        }
+    @include tablet{
+        @include grid(3,1.5rem);
+        .box{
+            img{
+                height: 10rem;
+                width: auto;
+            }
+        }
+    }
+    @include telefono{
+        @include grid(2,1.5rem);
+        .box{
+            padding: 1rem 0;
+            img{
+                height: auto;
+                width: 10rem;
+            }
+        }
+    }
+    @include fold{
+        display: block;
+
+        .box{
+            padding: 2rem 0;
+            margin-bottom: 1.5rem;
+            img{
+                width: 15rem;
+            }
+        }
+    }
+    }
+}

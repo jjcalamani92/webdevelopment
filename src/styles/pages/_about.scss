@@ -1,0 +1,70 @@
+.about{
+    z-index: 0;
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .info-container{
+            flex: 1 1 42rem;
+            h1{
+                font-size: 3rem;
+                color: $text-color-1;
+                text-transform: uppercase;
+                padding-bottom: 1rem;
+            }
+            .box-container{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+                .box{
+                    flex:1 1 20rem;
+                    h3{
+                        font-size: 1.7rem;
+                        color:$text-color-1;
+                        padding:1rem 0;
+                        font-weight: normal;
+                        text-transform: none;
+                        span{
+                            color:$orange;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            @include telefono {
+                gap: 0;
+            }
+            }
+        }
+        .count-container{
+            flex:1 1 42rem;
+            @include grid(3,1.5rem);
+                .box{
+                    
+                    padding:1rem 2.5rem;
+                    border-radius: .5rem;
+                    background: #fff;
+                    box-shadow: $box-shadow;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    h3{
+                        font-size: 4rem;
+                        color:$orange;
+                    }
+                    p{
+                        font-size: 2rem;
+                        color:$text-color-2;
+                    }
+            }
+        @include telefono{
+            display: block;
+        }
+        }
+    @include telefono {
+        gap: 0;
+    }
+    }
+}
+
+
+

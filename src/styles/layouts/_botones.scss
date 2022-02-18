@@ -1,0 +1,99 @@
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:1rem 2.8rem;
+    padding-right: 3rem;
+    background-color: transparent;
+    border: 0.1rem solid $orange;
+    color:$text-color-1;
+    cursor: pointer;
+    font-size: 1.7rem;
+    i{
+        margin-left: 2rem;
+        color: $text-color-1;
+    }
+    &:hover{
+        transform:scale(1.1);
+        color: #fff;
+        background-color: $orange;
+        }
+}
+.btn-1{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding:1rem 2rem;
+    background-color: transparent;
+    border: 0.1rem solid $orange;
+    cursor: pointer;
+    transition: color .3s ease;
+    span{
+        color:$text-color-1;
+        font-size: 1.7rem;
+    }
+    i{
+        margin-left: 2rem;
+        color: $text-color-1;
+        font-size: 1.7rem;
+    }
+    &:hover{
+        color: #fff;
+        background-color: $orange;
+        }
+@include tablet{
+    span{
+        display: none;
+    }
+    i{
+        margin: 0;
+    }
+}
+}
+
+.btns{
+    display: flex;
+    align-content: flex-end;
+    button{
+        margin: 0 .5rem;
+    }
+    span{
+        display: none;
+    }
+    i{
+        margin: 0;
+    }
+}
+
+.btn-general{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding:1rem 2rem;
+    background-color: transparent;
+    border: 0.1rem solid $orange;
+    cursor: pointer;
+    transition: color .3s ease;
+    font-size: 1.7rem;
+    span{
+        color:$text-color-1;
+        font-size: 1.7rem;
+    }
+    i{
+        margin-left: 2rem;
+        color: $text-color-1;
+        font-size: 1.7rem;
+    }
+    &:hover{
+        color: #fff;
+        background-color: $orange;
+        }
+}
+.btn-load{
+    text-align: center;
+    padding: 2rem 0;
+    i{
+        display: none;
+    }
+}
+
