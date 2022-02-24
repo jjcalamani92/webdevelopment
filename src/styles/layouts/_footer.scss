@@ -1,5 +1,6 @@
 .footer{
     margin-top: 4rem;
+    padding: 0 9%;
     text-align: center;
     background: #fff;
     box-shadow: .5rem 0 1.5rem rgba(0,0,0,.1);
@@ -20,8 +21,10 @@
             color: $text-color-1;
             background: #fff;
             border-radius: 50%;
+            transition: all .3s ease;
             &:hover{
                 color: $orange;
+                transition: all .5s ease;
             }
         }
     }

@@ -16,28 +16,28 @@
         flex: 1 1 42rem;
         text-align: center;
         h2{
-            color: $text-color-1;
+            color: $primaryText;
             font-size: 3rem;
             padding-bottom: .5rem;
             font-weight: normal;
             line-height: 1.2;
             span {
                 font-size: 4rem;
-                color: $orange;
+                color: $colorPrimary;
                 padding: .5rem 0;
                 display: block;
                 font-weight: bolder;
             }
         }
         h3{
-            color: $text-color-1;
+            color: $primaryText;
             font-size: 3rem;
             padding: 1rem 0;
             font-weight: normal;
             line-height: 1.2;
             span {
                 font-size: 4rem;
-                color: $orange;
+                color: $colorPrimary;
                 padding: .5rem 0;
                 display: block;
                 font-weight: bolder;
@@ -46,7 +46,7 @@
         
         p{
             font-size: 2rem;
-            color: $text-color-2;
+            color: $secundaryText;
             padding: 1rem 0;
             line-height: 1.7;
             text-transform: none;

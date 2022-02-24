@@ -3,14 +3,14 @@ export const academys= [
         id: 1,
         academy: 'UDEMY',
         description: 'Udemy.com es una plataforma de aprendizaje en línea. Está dirigido a adultos profesionales.​ A diferencia de los programas académicos MOOC conducidos por tradicionales cursos de trabajo creados por las universidades, Udemy utiliza contenido de creadores en línea para vender y así conseguir ganancias.',
-        image: 'https://res.cloudinary.com/dvcyhn0lj/image/upload/v1645057014/React-jj/habilidades/education/Udemy-Simbolo_t34nub.png',
+        image: 'https://res.cloudinary.com/dvcyhn0lj/image/upload/v1645201091/React-jj/habilidades/education/udemy-1_rjq5fg.svg',
 
     },
     {
         id: 2,
         academy: 'platzi',
         description: 'Platzi es una plataforma latinoamericana de educación en línea. ​ Fue fundada en 2014 por el ingeniero colombiano Freddy Vega y por el informático guatemalteco Christian Van Der Henst.',
-        image: 'https://res.cloudinary.com/dvcyhn0lj/image/upload/v1645057089/React-jj/habilidades/education/logo-platzi-2_oq92vu.png',
+        image: 'https://res.cloudinary.com/dvcyhn0lj/image/upload/v1645201230/React-jj/habilidades/education/badge-empodera-ecb8c41b-cdee-4126-bfb3-a6872e2fe2f8_yie6wn.png',
 
     },
     {

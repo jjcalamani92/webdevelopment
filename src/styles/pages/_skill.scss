@@ -12,19 +12,14 @@
             align-items: center;
             flex-direction: column;
             align-content: center;       
-            &:hover{
-                background: #fff;
-                h3{
-                    color: $text-color-1;
-                }
-            }
+            
             img{
                 height: 15rem;
                 width: auto;
             }
             
             h3{
-                color: $text-color-1;
+                color: $primaryText;
                 font-size: 1.7rem;
                 font-weight: normal;
                 text-transform: uppercase;

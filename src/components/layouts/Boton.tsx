@@ -1,14 +1,17 @@
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export const Boton = ( props:any ) => {
-    const { title, titleI, className , handleclick, icon } = props;
+    const { title, titleI, className , handleclick } = props;
     return (
         <button 
             className={`${ className }`}
             onClick={ handleclick }
         >
             <span> { title } </span> { titleI }
-            <i className={`fas fa-${ icon }`}></i>
+            <FontAwesomeIcon className="icon" icon={faUser} />
+            
         </button>
     )
 }

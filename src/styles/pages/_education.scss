@@ -10,17 +10,9 @@
         padding-bottom: 0;
         padding-left: 3.5rem;
         padding-bottom: 3rem;
-        border-left: .1rem solid $text-color-1;
+        border-left: .1rem solid $primaryText;
         position: relative;
         margin-bottom: 2rem;
-
-        display: none;
-            &:nth-child(1),
-            &:nth-child(2){
-                display: inline-block;
-            }
-
-
             .icon{
                 height: 4.5rem;
                 width: 4.5rem;
@@ -35,7 +27,7 @@
             }
             span{
                 font-size: 1.7rem;
-                color:$text-color-2;
+                color:$secundaryText;
                 border-radius: 5rem;
                 padding:.5rem 1.5rem;
                 background: #eee;
@@ -43,14 +35,14 @@
             h2{
                 font-size: 2rem;
                 padding: 1rem 0;
-                color:$text-color-1;
+                color:$primaryText;
                 padding-top: 3rem;
                 font-weight: bolder;
             }
             h3{
                 font-size: 1.8rem;
                 padding: 1rem 0;
-                color:$text-color-1;
+                color:$primaryText;
                 font-weight: normal;
                 span {
                     font-weight: bold;
@@ -58,7 +50,7 @@
             }
             p{
                 font-size: 1.5rem;
-                color:$text-color-2;
+                color:$secundaryText;
                 line-height: 2;
                 text-transform: none;
             }

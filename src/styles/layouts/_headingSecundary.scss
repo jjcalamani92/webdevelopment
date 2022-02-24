@@ -4,7 +4,7 @@
     align-items: center;
     padding: 2rem 9%;
     h1{
-        color: $text-color-1;
+        color: $primaryText;
         font-family: 'Nunito', sans-serif;
         font-size: 4rem;
         text-transform: capitalize;
@@ -15,7 +15,7 @@
                 position: absolute;
                 bottom: 1rem; left: 0;
                 z-index: -1;
-                background: $orange;
+                background: $colorPrimary;
                 height: 100%;
                 width: 100%;
                 clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);

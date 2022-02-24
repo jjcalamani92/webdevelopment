@@ -1,19 +1,25 @@
 import { courses } from "../../../data/education"
 import { Boton } from "../../layouts/Boton"
+import { useState } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 export const EducationCards = (  ) => {
 
-    const handleCourse = () => {
-        console.log('hello');
+    const [ noOfElement, setNoOfElement ] = useState(2);
+    const slice = courses.slice(0, noOfElement);
+
+    const handleLoadMore = () => {
+        setNoOfElement( noOfElement + 2 );
         
     }
     return (
         <section className="education">
             <div className="box-container" >
-                {courses.map(( course, i ) =>
+                {slice.map(( course, i ) =>
                 <div className='box' key={ i }>
                     <div className='icon'>
-                        <i className='fas fa-graduation-cap'></i>
+                        <FontAwesomeIcon icon={faGraduationCap}/>
                     </div>
                     <span>{ course.date } { course.academy }</span>
                     <h2>{ course.title }</h2>
@@ -26,7 +32,7 @@ export const EducationCards = (  ) => {
                 <Boton
                         titleI="Mostrar Más"
                         className="btn-general"
-                        handleclick={ handleCourse } 
+                        handleclick={ handleLoadMore } 
                 />
             </div>
             

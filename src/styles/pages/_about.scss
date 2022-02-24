@@ -9,7 +9,7 @@
             flex: 1 1 42rem;
             h1{
                 font-size: 3rem;
-                color: $text-color-1;
+                color: $primaryText;
                 text-transform: uppercase;
                 padding-bottom: 1rem;
             }
@@ -21,12 +21,12 @@
                     flex:1 1 20rem;
                     h3{
                         font-size: 1.7rem;
-                        color:$text-color-1;
+                        color:$secundaryText;
                         padding:1rem 0;
                         font-weight: normal;
                         text-transform: none;
                         span{
-                            color:$orange;
+                            color:$primaryText;
                             font-weight: 700;
                         }
                     }
@@ -49,11 +49,11 @@
                     margin-bottom: 1rem;
                     h3{
                         font-size: 4rem;
-                        color:$orange;
+                        color:$colorPrimary;
                     }
                     p{
                         font-size: 2rem;
-                        color:$text-color-2;
+                        color:$primaryText;
                     }
             }
         @include telefono{

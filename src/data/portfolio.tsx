@@ -65,10 +65,50 @@ export const works= [
     },
     {
         id: 8,
+        title: 'ADIIISOL',
+        content: 'Tienda Online',
+        image: 'https://res.cloudinary.com/dvcyhn0lj/image/upload/v1645643137/React-jj/portfolio/tamano-del-sol_hllriy.jpg',
+        url: 'https://adiisol.herokuapp.com/',
+        type: 'site'
+    },
+    {
+        id: 9,
+        title: 'Glasses Shop',
+        content: 'Página web de una tienda de lentes',
+        image: 'https://res.cloudinary.com/dvcyhn0lj/image/upload/v1645643597/React-jj/portfolio/tipos-de-lentes-instagram-ok-vision-lentes_rj7mim.jpg',
+        url: 'https://glassesshops.herokuapp.com/',
+        type: 'page'
+    },
+    {
+        id: 10,
+        title: 'Constructora sol',
+        content: 'Página web de una empresa constructora',
+        image: 'https://res.cloudinary.com/dvcyhn0lj/image/upload/v1645643671/React-jj/portfolio/materiales-construccion_hxvw3j.jpg',
+        url: 'https://constructorasol.herokuapp.com/',
+        type: 'page'
+    },
+    {
+        id: 11,
         title: 'ADMIN',
         content: 'panel de administración de clientes',
         image: 'https://res.cloudinary.com/dvcyhn0lj/image/upload/v1644878059/React-jj/portfolio/Integrate-AdminLTE-In-Laravel-Complete-Guide-01_gdmqce.png',
         url: 'https://veranet.herokuapp.com/',
         type: 'app'
+    },
+    {
+        id: 12,
+        title: 'Academia Focus',
+        content: 'página web de una academia',
+        image: 'https://res.cloudinary.com/dvcyhn0lj/image/upload/v1645713371/React-jj/portfolio/TN_school-notebook-with-pencil-animated-clipart-3_qy7zda.jpg',
+        url: 'https://academyfocus.herokuapp.com/',
+        type: 'page'
+    },
+    {
+        id: 13,
+        title: 'Car shop',
+        content: 'página web de agencia de venta de autos',
+        image: 'https://res.cloudinary.com/dvcyhn0lj/image/upload/v1644019960/React-jj/portfolio/img07_n1vbcz.jpg',
+        url: 'https://carsshops.herokuapp.com/',
+        type: 'page'
     },
 ]

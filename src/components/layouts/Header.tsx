@@ -1,5 +1,10 @@
+import { faBars, faBriefcase, faCode, faContactBook, faHouse, faSquarePollVertical, faTimes, faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
+
+
+
 
 const Header = () => {
 
@@ -23,28 +28,29 @@ const Header = () => {
                 className="logo"
             > 
                 
-                <img className="icon" src='https://res.cloudinary.com/dvcyhn0lj/image/upload/v1644875469/React-jj/lvsgwhadou1vkgmoscqu.png' alt="JJ web development jesus calamani"></img>
-                
+                <FontAwesomeIcon className="icon" icon={faCode}/>
                 Web<span>Development</span>
             </NavLink>
             <div className="header-navbar">
                     <nav 
                         className={openMenu ? 'navbar active animate__animated animate__fadeInRight' : 'navbar'}
                     >
-                        <NavLink onClick={ handleClose }  to="/">Inicio <i className="fas fa-home" ></i> </NavLink>
-                        <NavLink onClick={ handleClose } to="/sobre_mi">Sobre mi <i className="fas fa-user" ></i> </NavLink>
-                        <NavLink onClick={ handleClose } to="/portafolio">Portafolio <i className="fas fa-briefcase" ></i> </NavLink>
-                        <NavLink onClick={ handleClose } to="/servicios">Servicios <i className="fab fa-servicestack" ></i> </NavLink>
-                        <NavLink onClick={ handleClose } to="/contacto">Contacto <i className="fas fa-address-book" ></i> </NavLink>
+                        <NavLink onClick={ handleClose }  to="/">Inicio <FontAwesomeIcon className="icon" icon={faHouse}/> </NavLink>
+                        <NavLink onClick={ handleClose } to="/sobre_mi">Sobre mi <FontAwesomeIcon className="icon" icon={faUser} /> </NavLink>
+                        <NavLink onClick={ handleClose } to="/portafolio">Portafolio <FontAwesomeIcon className="icon" icon={faBriefcase}/> </NavLink>
+                        <NavLink onClick={ handleClose } to="/servicios">Servicios <FontAwesomeIcon className="icon" icon={faSquarePollVertical}/> </NavLink>
+                        <NavLink onClick={ handleClose } to="/contacto">Contacto <FontAwesomeIcon className="icon" icon={faContactBook}/> </NavLink>
                     </nav>
                     
                     <div 
                         className="icons"
                     >
                         <div 
-                            className={openMenu ? 'fas fa-times' : 'fas fa-bars menu-btn'}
+                            
+                            className='menu-btn'
                             onClick={ openMenu ? handleClose : handleOpen }
                         >
+                            <FontAwesomeIcon icon={openMenu ? faTimes : faBars} />
                         </div>
                     </div>
             </div>

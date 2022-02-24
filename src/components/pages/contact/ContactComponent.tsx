@@ -1,3 +1,5 @@
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const ContactComponent = () => {
     return (
@@ -17,7 +19,7 @@ export const ContactComponent = () => {
                     </div>
                     <textarea name="message" placeholder="tu mensaje" id="" cols={30} rows={10} required></textarea>
                     <input type="hidden" name="_next" value=""/>
-                    <button type="submit" className="btn-1"> enviar mensaje <i className="fas fa-paper-plane"></i></button>
+                    <button type="submit" className="btn-1"> enviar mensaje  <FontAwesomeIcon className="icon" icon={faPaperPlane} />  </button>
                 </form>
             </div>
         </section>

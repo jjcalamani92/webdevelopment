@@ -1,7 +1,7 @@
 .header{
     position: sticky;
     top:0; left:0; right:0;
-    background: $bg-color-1;
+    background: #fff;
     box-shadow: $box-shadow;
     padding: 1.5rem 7%;
     z-index: 1000;
@@ -11,25 +11,26 @@
 
     .logo{
         .icon {
-            font-size: 2.5rem;
-            background: $orange;
-            color: #fff;
+            font-size: 2rem;
+            color: $colorPrimary;
             width: 3rem;
             height: 3rem;
+            line-height: 3rem;
             justify-content: center;
             align-items: center;
             border-radius: .5rem;
             font-weight: 700;
             margin-right: .2rem;
+            padding: .5rem;
         }
         font-size: 2.5rem;
-        color: $text-color-1;
+        color: $primaryText;
         text-transform: capitalize;
         font-weight: 500;
         display: flex;
         align-items: center;
         span{
-            color: $orange;
+            color: $colorPrimary;
             text-transform: capitalize;
             font-weight: 700;
         }
@@ -45,17 +46,18 @@
             font-size: 1.7rem;
             border-radius: .5rem;
             margin-left: 1rem;
-            
-            color: $text-color-2;
+            color: $primaryText;
+            transition: all .5s ease;
             &:hover{
-                color: $orange;
+                color: $colorPrimary;
+                transition: all .5s ease;
             }
             &.active{
-                background: $orange;
+                background: $colorPrimary;
                 color: #fff;
             }
         }
-        i{
+        .icon{
             display: none;
         }
         
@@ -65,17 +67,18 @@
         height:4.5rem;
         width:4.5rem;
         line-height:4.5rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
         border-radius: .5rem;
         margin-left: 1rem;
         background: $bg-color-2;
-        color: $text-color-1;
+        color: $primaryText;
         cursor: pointer;
         text-align: center;
         
         &:hover{
             color:#fff;
-            background: $orange;
+            background: $colorPrimary;
+            
         }
     }
     .menu-btn{
@@ -107,14 +110,15 @@
             color: $text-color-1;
             border-radius: .5rem;
             justify-content: space-between;
-            i{
+            transition: all .5s ease;
+            .icon{
                 display: inline-block;
             }
             &:hover{
                 // color: $orange;
                 // background: $bg-color-2;
                 // margin-left: 1.5rem;
-                transition: .3s ease-in-out;
+                transition: all .5s ease;
             }
         }
         
