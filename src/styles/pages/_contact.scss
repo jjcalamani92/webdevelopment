@@ -1,54 +1,97 @@
-.contact{
-    z-index: 0;
-      .row{
+.contact {
+  .icons-container {
+    margin-bottom: 3rem;
+    @include grid(4, 1.5rem);
+    .icons {
+      text-align: center;
+      padding: 3rem 2rem;
+      border-radius: .5rem;
+      // border: $borderB;
+      background: $white;
+      .icon {
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        font-size: 2rem;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+        color: $white;
+        background: $colorPrimary;
+        padding: 2rem;
+      }
+      h3 {
+        @include titleText(2rem);
+        padding: 0.5rem 0;
+      }
+      p {
+        @include graphText(1.5rem);
+        text-transform: none;
+      }
+    }
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .image {
+      flex: 1 1 40rem;
+      img {
+        width: 90%;
+      }
+    }
+    form {
+      flex: 1 1 40rem;
+      padding: 1rem 2rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      background: #fff;
+      margin-bottom: 2rem;
+      .inputBox {
         display: flex;
-        align-items: center;
-        text-align: center;
+        justify-content: space-between;
         flex-wrap: wrap;
-        gap: 2rem;
-        .image{
-          flex: 1 1 40rem;
-          img{
-            width: 100%;
-          }
-        }
-        form{
-          flex: 1 1 40rem;
-          padding: 1rem 2rem;
-          box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-          border-radius: .5rem;
-          background: #fff;
-          margin-bottom: 2rem;
-          .inputBox{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-          }
-          .inputBox input,
-          textarea{
-            width: 100%;
-            border-radius: .5rem;
-            font-size: 1.7rem;
-            color: #333;
-            padding: 1rem;
-            margin: 1rem 0;
-            border: .1rem solid rgba(0,0,0,.1);
-            text-transform: none;
-          }
-          
-          .inputBox input{
-            width: 49%;
-          @include tablet{
-            width: 100%;
-          }
-          }
-          textarea{
-            height: 20rem;
-            resize: none;
-          }
-          .btn{
-            margin: .5rem 0;
-          }
+      }
+      .inputBox input,
+      textarea {
+        width: 100%;
+        border-radius: 0.5rem;
+        font-size: 1.7rem;
+        color: #333;
+        padding: 1rem;
+        margin: 1rem 0;
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+        text-transform: none;
+      }
+
+      .inputBox input {
+        width: 49%;
+        @include tablet {
+          width: 100%;
         }
       }
+      textarea {
+        height: 20rem;
+        resize: none;
+      }
+      .btn {
+        margin: 0.5rem 0;
+      }
+    }
   }
+@include tablet{
+  .icons-container {
+    @include grid(2, 1.5rem);
+  }
+}
+@include telefono{
+  .icons-container {
+    margin-top: 1rem;
+    display: block;
+    .icons{
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+}

@@ -1,10 +1,17 @@
-import { ServiceCards } from "./ServiceCards"
+import { useSelector } from "react-redux";
+import { ServiceCards } from "./ServiceCards";
+
+interface State {
+  Service: any;
+}
 
 export const ServiceComponent = () => {
-    return (
-        <section className="services">
-            <ServiceCards
-            />
-        </section>
-    )
-}
+  const { services } = useSelector((state: State) => state.Service);
+  return (
+    <section className="services">
+      {services.map((data: any, i:Number) => (
+        <ServiceCards key={i} {...data} />
+      ))}
+    </section>
+  );
+};

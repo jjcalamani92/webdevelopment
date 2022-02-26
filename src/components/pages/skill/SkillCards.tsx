@@ -1,18 +1,31 @@
-import { skills } from "../../../data/skill"
+import { Popover } from 'react-tiny-popover'
 
-export const SkillCards = () => {
-    return (
-        <section className="skills">
-            <div className="box-container">   
-                {
-                    skills.map( (skill, i) => (
-                        <div className="box" key = { i }>
-                            <img src={ skill.image } alt={ skill.title }/>
-                            <h3>{ skill.title }</h3>
-                        </div>
-                    ))
-                }
-            </div>
-        </section>
-    )
+interface Props {
+  title: String;
+  titleURL: any;
+  imageCard: String;
+  image: String;
+  description: String;
+  content: String;
+  modulos: String;
+  hours: String;
 }
+
+export const SkillCards = ({
+  title,
+  titleURL,
+  image,
+  imageCard,
+  description,
+  content,
+  modulos,
+  hours,
+}: Props) => {
+  return (
+    <div className="box">
+        <img src={`${image}`} alt={`${title}`} />
+        <h3>{title}</h3>
+    </div>
+
+  );
+};

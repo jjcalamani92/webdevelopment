@@ -40,13 +40,12 @@
             flex:1 1 42rem;
             @include grid(3,1.5rem);
                 .box{
-                    
                     padding:1rem 2.5rem;
                     border-radius: .5rem;
                     background: #fff;
                     box-shadow: $box-shadow;
                     text-align: center;
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.5rem;
                     h3{
                         font-size: 4rem;
                         color:$colorPrimary;
@@ -58,6 +57,8 @@
             }
         @include telefono{
             display: block;
+            
+
         }
         }
     @include telefono {

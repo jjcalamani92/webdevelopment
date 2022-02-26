@@ -1,63 +1,59 @@
-.skills{
-    z-index: 0;
-    .box-container{
-        
-        @include grid(4,1.5rem);
-        .box{
-            padding: 2rem;
-            box-shadow: $box-shadow;
-            border-radius: .5rem;
-            background: #fff;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            align-content: center;       
-            
-            img{
-                height: 15rem;
-                width: auto;
-            }
-            
-            h3{
-                color: $primaryText;
-                font-size: 1.7rem;
-                font-weight: normal;
-                text-transform: uppercase;
-                margin: 1.5rem 0;
-            }
-            button{
-                align-content: flex-end;    
-            }
-        }
-    @include tablet{
-        @include grid(3,1.5rem);
-        .box{
-            img{
-                height: 10rem;
-                width: auto;
-            }
-        }
-    }
-    @include telefono{
-        @include grid(2,1.5rem);
-        .box{
-            padding: 1rem 0;
-            img{
-                height: auto;
-                width: 10rem;
-            }
-        }
-    }
-    @include fold{
-        display: block;
+.skills {
+  @include grid(4, 1.5rem);
+  .box {
+    padding: 2rem;
+    box-shadow: $box-shadow;
+    border-radius: 0.5rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
 
-        .box{
-            padding: 2rem 0;
-            margin-bottom: 1.5rem;
-            img{
-                width: 15rem;
-            }
-        }
+    img {
+      height: 15rem;
+      width: auto;
     }
+
+    h3 {
+      color: $primaryText;
+      font-size: 1.7rem;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin: 1.5rem 0;
     }
+    button {
+      align-content: flex-end;
+    }
+  }
+  @include tablet {
+    @include grid(3, 1.5rem);
+    .box {
+      img {
+        height: 10rem;
+        width: auto;
+      }
+    }
+  }
+  @include telefono {
+    @include grid(2, 1.5rem);
+    .box {
+      padding: 1rem 0;
+      img {
+        height: auto;
+        width: 10rem;
+      }
+    }
+  }
+  @include fold {
+    display: block;
+
+    .box {
+      padding: 2rem 0;
+      margin-bottom: 1.5rem;
+      img {
+        width: 15rem;
+      }
+    }
+  }
 }

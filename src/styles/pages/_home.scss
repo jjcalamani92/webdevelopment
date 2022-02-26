@@ -5,7 +5,6 @@
     gap: 2rem;
     min-height: calc(92.5vh - 6.5rem);
     text-align: center;
-    z-index: 0;
     .image{
         flex: 1 1 42rem;
         text-align: center;
@@ -125,7 +124,6 @@
     50%{
         transform: translateY(-.5rem);
         opacity: 1;
-        
     }
     
 }
@@ -138,11 +136,7 @@
         transform: translateY(-1rem);
         transform: translateX(0rem);
     }
-    
 }
-
-
-
 
 .thanks{
     display: flex;
@@ -171,7 +165,7 @@
             text-transform: none;
             span {
                 font-size: 4rem;
-                color: $orange;
+                color: $colorPrimary;
                 padding: .5rem 0;
                 display: block;
                 font-weight: bolder;

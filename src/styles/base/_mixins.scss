@@ -25,5 +25,15 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+@mixin titleText($titleSize) {
+    font-size: $titleSize;
+    text-transform: capitalize;
+    color:$primaryText;
+}
 
+@mixin graphText($graphSize) {
+    font-size: $graphSize;
+    line-height: 2;
+    color:$secundaryText;
+}
 

@@ -1,29 +1,62 @@
-.blogs{
-    z-index: 0;
-    .box-container{
-        .box{
-            img{
-                max-width: 100%;
+.blogs {
+    @include grid(4, 1.5rem);
+    .box {
+        box-shadow: $box-shadow;
+        background: $white;
+        .image {
+            height: 25rem;
+            overflow: hidden;
+            position: relative;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: all 0.3s ease;
             }
-            h3{
-                font-size: 3.2rem;
-                padding-top: 1rem;
-                line-height: 2;
+        }
+        &:hover .image img {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+        }
+        &.hide {
+        display: none;
+        }
+        .content {
+        padding: 2rem;
+        text-align: center;
+        //   border: $borderB;
+        h3 {
+            @include titleText(1.6rem);
+        }
+        p {
+            padding: 1rem 0;
+            @include graphText(1.6rem);
+            text-transform: none;
+        }
+        .icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            // border-top: $borderB;
+            span {
+            @include titleText(1.5rem);
+            .icon {
+                color: $colorPrimary;
+                padding-right: 0.5rem;
             }
-            p{
-                font-size: 1.7rem;
-                line-height: 2;
             }
+        }
         }
     }
-@include tablet {
-    .box-container{
-        .box{
-            h3{
-                font-size: 2.5rem;
-                line-height: 1.7;
-            }
-        }
+@include tablet{
+    @include grid(2, 1.5rem);
+}
+@include telefono{
+    display: block;
+    .box{
+        margin-bottom: 1.5rem;
     }
 }
 }

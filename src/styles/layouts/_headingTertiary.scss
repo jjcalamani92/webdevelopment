@@ -1,0 +1,19 @@
+.headingTertiary{
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    // border-bottom: $border;
+    color: $primaryText;
+    padding: 2rem 9%;
+    text-align: center;
+    justify-content: center;
+    span{
+        color: $colorPrimary;
+    }
+    a{
+        margin-left: auto;
+        color: $secundaryText;
+        font-size: 1.7rem;
+    }
+}

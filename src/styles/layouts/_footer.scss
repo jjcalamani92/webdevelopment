@@ -16,14 +16,14 @@
             height: 5rem;
             width: 5rem;
             line-height: 5rem;
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin: .5rem;
-            color: $text-color-1;
+            color: $primaryText;
             background: #fff;
             border-radius: 50%;
             transition: all .3s ease;
             &:hover{
-                color: $orange;
+                color: $colorPrimary;
                 transition: all .5s ease;
             }
         }
@@ -36,8 +36,10 @@
         padding: 1.5rem;
         span{
             font-weight: 700;
-            color: $orange;
-
+            cursor: pointer;
+            a{
+                color: $colorPrimary;
+            }
         }
     }
 @include tablet{

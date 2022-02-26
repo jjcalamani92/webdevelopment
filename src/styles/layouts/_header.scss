@@ -39,31 +39,47 @@
         display: flex;
     }
     .navbar{
-        display: flex;
-        align-items: center;
-        a{
-            padding:.5rem 1rem;
-            font-size: 1.7rem;
-            border-radius: .5rem;
-            margin-left: 1rem;
-            color: $primaryText;
+        position: absolute;
+        top: 115%; right: 7%;
+        display: inline-block;
+        background: $bg-color-1;
+        border-radius: .5rem;
+        box-shadow: $box-shadow;
+        width: 25rem;
+        transform:scale(0);
+        transition: all .5s ease;
+        transform-origin: top right;
+        &.active{
+            color: #fff;
+            transform:scale(1);
             transition: all .5s ease;
+        }
+        a{
+            display: flex;
+            margin: 1rem;
+            padding: 1rem;
+            font-size: 1.8rem;
+            color: $text-color-1;
+            border-radius: .5rem;
+            justify-content: space-between;
+            transition: all .5s ease;
+            
+            .icon{
+                display: inline-block;
+            }
             &:hover{
                 color: $colorPrimary;
+                background: $bg-color-2;
+                margin-left: 1.5rem;
                 transition: all .5s ease;
             }
-            &.active{
-                background: $colorPrimary;
-                color: #fff;
-            }
-        }
-        .icon{
-            display: none;
         }
         
     }
     
-    .icons div{
+    .icons {
+        display: flex;
+        div{
         height:4.5rem;
         width:4.5rem;
         line-height:4.5rem;
@@ -80,48 +96,44 @@
             background: $colorPrimary;
             
         }
-    }
-    .menu-btn{
-        display: none;
-    }
+    }}
+    
 @include tablet{
-    .menu-btn{
-        display: inline-block;
-    }
-    .navbar{
-        position: absolute;
-        top: 115%; right: -30rem;
-        display: inline-block;
-        background: $bg-color-1;
-        border-radius: .5rem;
-        box-shadow: $box-shadow;
-        width: 20rem;
-        transition: all .5s ease;
-        &.active{
-            color: #fff;
-            right: 1.5rem;
-            transition: all .5s ease;
-        }
-        a{
-            display: flex;
-            margin: 1rem;
-            right: -30rem;
-            font-size: 1.7rem;
-            color: $text-color-1;
-            border-radius: .5rem;
-            justify-content: space-between;
-            transition: all .5s ease;
-            .icon{
-                display: inline-block;
-            }
-            &:hover{
-                // color: $orange;
-                // background: $bg-color-2;
-                // margin-left: 1.5rem;
-                transition: all .5s ease;
-            }
-        }
+    
+    // .navbar{
+    //     position: absolute;
+    //     top: 115%; right: -30rem;
+    //     display: inline-block;
+    //     background: $bg-color-1;
+    //     border-radius: .5rem;
+    //     box-shadow: $box-shadow;
+    //     width: 20rem;
+    //     transition: all .5s ease;
+    //     &.active{
+    //         color: #fff;
+    //         right: 1.5rem;
+    //         transition: all .5s ease;
+    //     }
+    //     a{
+    //         display: flex;
+    //         margin: 1rem;
+    //         right: -30rem;
+    //         font-size: 1.7rem;
+    //         color: $text-color-1;
+    //         border-radius: .5rem;
+    //         justify-content: space-between;
+    //         transition: all .5s ease;
+    //         .icon{
+    //             display: inline-block;
+    //         }
+    //         &:hover{
+    //             // color: $orange;
+    //             // background: $bg-color-2;
+    //             // margin-left: 1.5rem;
+    //             transition: all .5s ease;
+    //         }
+    //     }
         
-    }
+    // }
 }
 }

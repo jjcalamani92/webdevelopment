@@ -1,9 +1,11 @@
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { ContactIcons } from "./ContactIcons"
 
 export const ContactComponent = () => {
     return (
-        <section className="contact box">
+        <section className="contact">
+            <ContactIcons/>
             <div className="row" >
                 <div className="image">
                     <img className="tilt" src="https://res.cloudinary.com/dvcyhn0lj/image/upload/v1644021310/React-jj/blogs/contact-img_rnsmni.svg" alt=""/>

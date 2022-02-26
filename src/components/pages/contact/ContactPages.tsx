@@ -1,4 +1,3 @@
-import React from 'react'
 import { HeadingPrimary } from '../../layouts/HeadingPrimary'
 import { ContactComponent } from './ContactComponent'
 
@@ -9,6 +8,7 @@ export const ContactPages = () => {
                 titleP='Contactate'
                 titleS='conmigo'
             />
+            
             <ContactComponent/>
         </>
     )

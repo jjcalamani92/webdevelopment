@@ -1,22 +1,29 @@
-import { HeadingSecundary } from "../../layouts/HeadingSecundary"
+import { useSelector } from "react-redux";
+import { getByType } from "../../../selectors/getByType";
 import { PortfolioCards } from "./PortfolioCards"
 
-export const PortfolioComponents = () => {
+interface Props {
+    Portfolio: any
+}
+interface Type {
+    type: String
+}
+
+export const PortfolioComponents = ({ type }:Type) => {
+    const { works } = useSelector((state: Props) => state.Portfolio);
+    const work = getByType ( works, type );
+    
     return (
         <>
-            <HeadingSecundary
-            title = 'páginas web'
-            btnTitle = 'Agregar'
-            btnClassName = 'btn-1'
-            // btnHandleclick={handleAddNew}
-            btnIcon='plus-square'
-            />
+            
+            
+            {work.map((data: any, i:number) => (
+                <PortfolioCards
+                    key={i} {...data}
+                />
+            ))}
 
-            <PortfolioCards
-                type= 'page'
-            />
-
-            <HeadingSecundary
+            {/* <HeadingSecundary
             title = 'sitios web'
             btnTitle = 'Agregar'
             btnClassName = 'btn-1'
@@ -38,7 +45,7 @@ export const PortfolioComponents = () => {
 
             <PortfolioCards
                 type= 'app'
-            />
+            /> */}
         </>
     )
 }

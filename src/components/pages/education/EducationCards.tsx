@@ -1,41 +1,55 @@
-import { courses } from "../../../data/education"
-import { Boton } from "../../layouts/Boton"
-import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
-export const EducationCards = (  ) => {
+interface Props {
+    title: String;
+    titleURL: any;
+    imageCard: String;
+    image: String;
+    description: String;
+    teacher: String;
+    date: String;
+    academy: String;
+}
 
-    const [ noOfElement, setNoOfElement ] = useState(2);
-    const slice = courses.slice(0, noOfElement);
+export const EducationCards = ( {
+    title,
+    titleURL,
+    image,
+    imageCard,
+    description,
+    teacher,
+    date,
+    academy,
+}: Props ) => {
 
-    const handleLoadMore = () => {
-        setNoOfElement( noOfElement + 2 );
+    // const [ noOfElement, setNoOfElement ] = useState(2);
+    // const slice = courses.slice(0, noOfElement);
+
+    // const handleLoadMore = () => {
+    //     setNoOfElement( noOfElement + 2 );
         
-    }
+    // }
     return (
-        <section className="education">
-            <div className="box-container" >
-                {slice.map(( course, i ) =>
-                <div className='box' key={ i }>
+                <div className='box'>
                     <div className='icon'>
                         <FontAwesomeIcon icon={faGraduationCap}/>
                     </div>
-                    <span>{ course.date } { course.academy }</span>
-                    <h2>{ course.title }</h2>
-                    <p>{ course.description }</p>
-                    <h3>Profesor: <span>{ course.teacher }</span></h3>
+                    <span>{ date } { academy }</span>
+                    <h2>{ title }</h2>
+                    <p>{ description }</p>
+                    <h3>Profesor: <span>{ teacher }</span></h3>
                 </div>
-                )}
-            </div>
-            <div className="btn-load">
-                <Boton
-                        titleI="Mostrar Más"
-                        className="btn-general"
-                        handleclick={ handleLoadMore } 
-                />
-            </div>
             
-        </section>
+
+            // <div className="btn-load">
+            //     <Boton
+            //             titleI="Mostrar Más"
+            //             className="btn-general"
+            //             handleclick={ handleLoadMore } 
+            //     />
+            // </div>
+
+            
     )
 }
