@@ -64,7 +64,7 @@ const Header = () => {
     <header className="header">
       <NavLink to="/" className="logo">
         <FontAwesomeIcon className="icon" icon={faCode} />
-        Web<span>Development</span>
+        Web<span>Dev</span>
       </NavLink>
       <div className="header-navbar">
         <nav
